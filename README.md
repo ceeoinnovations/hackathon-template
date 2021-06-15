@@ -5,9 +5,9 @@
 * [Example Hackathon Website](https://ceeoinnovations.github.io/hackathon-template/)
 
 ## Google Drive Setup ##
-1. Create a folder with your website name in CEEO Google Drive. Allow anyone from CEEO can edit files in the folder
+1. Create a folder with your website name in CEEO Google Drive. Allow anyone from CEEO can **edit** files in the folder
 2. Duplicate files and a folder of [this](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing) 
-* `assets` folder: all images, videos, files. Allow anyone with links can view the files in it
+* `assets` folder: all images, videos, files. Allow anyone with links can **view** the files in it
 * `about`sheets: information about your website
 * `projects` sheets: information about projects on your website
 * `Website Link` doc: your website link

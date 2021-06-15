@@ -6,7 +6,7 @@
 
 ## Google Drive Setup ##
 1. Create a folder with your website name in CEEO Google Drive
-2. Duplicate files and a folder of this: https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing 
+2. Duplicate files and a folder of [this](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing) 
 * `assets` folder: all images, videos, files
 * `about`sheets: information about your website
 * `projects` sheets: information about projects on your website
@@ -15,7 +15,7 @@
 4. To provide any guidance about generating project content, insert notes in the top cell on the `project` sheet.
 
 ## GitHub Setup ##
-5. Get invited as a member of CEEO Innovations repository
+5. Get invited as a member of [CEEO Innovations](https://github.com/ceeoinnovations) repository
 6. Click `Use this template` on this repository to create a new repository 
 7. Select `ceeoinnovations` as owner. Name your repository. It will be a part of your website address so make sure that it is unique and it represents your website well. Make it `public`
 8. To host your website, go to `Settings`, click `Pages`, select `main` as a source, and save.

@@ -1,8 +1,6 @@
-import MaterialIcon from './MaterialIcon.js';
+import getImageURL, {templateIdFrom} from './Images.js';
 import Navbar from './Navbar.js';
 import Footer from './Footer.js';
-
-
 
 export default function ProjectPage(project, about){
     document.querySelector('.container').innerHTML = `
@@ -31,10 +29,10 @@ export function ProjectDetail(d){
         ${d.video}
         </div>
         
-        <img src="${d.teaser}" div class="project-teaser">
-        <img src="${d.image1}" div class="project-teaser">
-        <img src="${d.image2}" div class="project-teaser">
-        <img src="${d.image3}" div class="project-teaser">
+        <img src="${getImageURL(d.teaser)}" div class="project-teaser">
+        <img src="${getImageURL(d.image1)}" div class="project-teaser">
+        <img src="${getImageURL(d.image2)}" div class="project-teaser">
+        <img src="${getImageURL(d.image3)}" div class="project-teaser">
 
         <div class="row">
             <div class="col-9">

@@ -2,7 +2,7 @@
 
 ## Links ##
 * [GitHub Repository of Hackathon Template](https://github.com/ceeoinnovations/hackathon-template)
-* [Example Hackathon Website](https://ceeoinnovations.github.io/hackathon/)
+* [Example Hackathon Website](https://ceeoinnovations.github.io/hackathon-template/)
 
 ## Google Drive Setup ##
 1. Create a folder with your website name in CEEO Google Drive

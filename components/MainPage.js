@@ -1,0 +1,17 @@
+import Navbar from './Navbar.js';
+import About from './About.js';
+import Footer from './Footer.js';
+import Projects, {ProjectItems} from './Projects.js';
+
+
+export default function MainPage(data){
+    document.querySelector('.container').innerHTML = `
+        ${Navbar(data.about)}
+        ${About(data.about)}
+        ${Projects(data.projects)}
+        ${Footer(data.about)}
+    `
+
+    handleProjectFilter(data);
+}
+

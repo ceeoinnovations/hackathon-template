@@ -6,8 +6,8 @@ import Navbar from './components/Navbar.js';
 
 
 Promise.all([
-      d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSXmjYAKLSLUGrLa4R9gOOAvyX-pkuSLeWiU7yTjZ_W_atm6HUZVA6P0SqFpbAou7UXYiiEn-RmGB3p/pub?output=csv"),
-      d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRgf2Ii6Z7AQPNV84SWdxd3qhcywWhKvExyoRqzVYAaY0ow5G6UNNHaI7L4t9FjLqqqzIAHgboNoBNj/pub?output=csv")
+      d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSa2-2dvTEoDZJzuCmvkHQwwO3gGQMfjbNgO56gU5KmgJsluaOXgkuRd2UgWsKXeVeSQLhlQ6yv86KZ/pub?output=csv"),
+      d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9EXny1oBEoaY0kV0WOYWMJyByGx6uo76KsfnSZ413LNlNNr0uU_b86kHxyavIj_FCotd3Ir76rtHe/pub?output=csv")
       ])
       .then(([about, projects]) => {
         const data = {about, projects};

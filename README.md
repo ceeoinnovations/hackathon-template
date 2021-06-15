@@ -1,7 +1,7 @@
 # How to build a Website Using Google Sheets #
 
 ## Links ##
-* [GitHub Repository of Hackahon Template](https://github.com/ceeoinnovations/hackathon-template)
+* [GitHub Repository of Hackathon Template](https://github.com/ceeoinnovations/hackathon-template)
 * [Example Hackathon Website](https://ceeoinnovations.github.io/hackathon/)
 
 ## Google Drive Setup ##

@@ -15,11 +15,12 @@
 4. To provide any guidance about generating project content, insert notes in the top cell on the `project` sheet.
 
 ## GitHub Setup ##
-5. Click `Use this template` on this repository to create a new repository 
-6. Select `ceeoinnovations` as owner. Name your repository. It will be a part of your website address so make sure that it is unique and it represents your website well. Make it `public`
-7. To host your website, go to `Settings`, click `Pages`, select `main` as a source, and save.
-8. Go to `index.js` and replace the existing csv file URLs (line #9, #10) to yours. To get links to your Google Sheets, click `File`, `Publish to the web` on Google Sheets. Select `Entire Document` and `csv` then click `Publish`. The first csv file URL is for about and the second one is for projects
-9. Go to `index.html` and edit title (line #4) and meta property (line #8 - #11). 
+5. Get invited as a member of CEEO Innovations repository
+6. Click `Use this template` on this repository to create a new repository 
+7. Select `ceeoinnovations` as owner. Name your repository. It will be a part of your website address so make sure that it is unique and it represents your website well. Make it `public`
+8. To host your website, go to `Settings`, click `Pages`, select `main` as a source, and save.
+9. Go to `index.js` and replace the existing csv file URLs (line #9, #10) to yours. To get links to your Google Sheets, click `File`, `Publish to the web` on Google Sheets. Select `Entire Document` and `csv` then click `Publish`. The first csv file URL is for about and the second one is for projects
+10. Go to `index.html` and edit title (line #4) and meta property (line #8 - #11). 
 
 ## Adding Content ##
 10. Share a link to your Google folder with people and let them fill out the content in the `project` sheets. Make sure that people upload their files in their own folder under the assets folder and get link to host their images or videos

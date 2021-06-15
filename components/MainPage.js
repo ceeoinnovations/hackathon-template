@@ -11,7 +11,5 @@ export default function MainPage(data){
         ${Projects(data.projects)}
         ${Footer(data.about)}
     `
-
-    handleProjectFilter(data);
 }
 

@@ -19,7 +19,7 @@
 6. Click `Use this template` on this repository to create a new repository 
 7. Select `ceeoinnovations` as owner. Name your repository. It will be a part of your website address so make sure that it is unique and it represents your website well. Make it `public`
 9. Go to `index.js` and replace the existing csv file URLs (line #9, #10) to yours. To get links to your Google Sheets, click `File` and then `Publish to the web` on Google Sheets. Select `Entire Document` and `csv` then click `Publish`. The first csv file URL is for about and the second one is for projects
-10. Go to `index.html` and edit title (line #4) and meta property (line #8 - #11). 
+10. Go to `index.html` and edit title (line #4, necessary) and meta property (line #8 - #11, optional). 
 11. Go to `components/Navbar.js` and update the hyperlink with your GitHub repository name (line #7) 
 12. To publish your website, go to `Settings`, click `Pages`, select `main` as a source, and save. You can find your website link there.
 

@@ -24,7 +24,7 @@
 12. To publish your website, go to `Settings`, click `Pages`, select `main` as a source, and save. You can find your website link there.
 
 ## Adding Content ##
-10. Share a link to your Google folder with people and let them fill out the content in the `project` sheets. Make sure that people upload their files in their own folder under the assets folder and get link to host their images or videos
+10. Share a link to your Google folder with people and let them fill out the content in the `project` sheets. Make sure that people upload their files in their own folder under the assets folder and get link to host their images or videos. They can hover top cells in the sheets for tips.
 11. Make sure that anyone with links can view images and videos. Otherwise, it won't show up on the website
 12. Open your website to see everything is alright. It may take a couple of minutes to get updated
 

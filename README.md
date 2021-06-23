@@ -1,6 +1,6 @@
 ## Links ##
 * [Website](https://ceeoinnovations.github.io/hackathon-template/)
-* [Data (Google Drive](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing)
+* [Data (Google Drive)](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing)
 
 # How to build a Website Using Google Sheets #
 ## Google Drive Setup ##

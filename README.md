@@ -1,9 +1,8 @@
-# How to build a Website Using Google Sheets #
-
 ## Links ##
-* [GitHub Repository of Hackathon Template](https://github.com/ceeoinnovations/hackathon-template)
-* [Example Hackathon Website](https://ceeoinnovations.github.io/hackathon-template/)
+* [Website](https://ceeoinnovations.github.io/hackathon-template/)
+* [Data (Google Drive](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing)
 
+# How to build a Website Using Google Sheets #
 ## Google Drive Setup ##
 1. Create a folder with your website name in CEEO Google Drive. Allow anyone from CEEO can **edit** files in the folder
 2. Duplicate files and a folder of [this](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing) 
@@ -22,6 +21,7 @@
 10. Go to `index.html` and edit title (line #4, necessary) and meta property (line #8 - #11, optional). 
 11. Go to `components/Navbar.js` and update the hyperlink with your GitHub repository name (line #7) 
 12. To publish your website, go to `Settings`, click `Pages`, select `main` as a source, and save. You can find your website link there.
+13. Update readme.md in your GitHub repository. Get rid of this instructions except for links. Replace links to website and data.
 
 ## Adding Content ##
 10. Share a link to your Google folder with people and let them fill out the content in the `project` sheets. Make sure that people upload their files in their own folder under the assets folder and get link to host their images or videos. They can hover top cells in the sheets for tips.

@@ -11,7 +11,7 @@
 * `projects` sheets: information about projects on your website
 * `Website Link` doc: your website link
 3. Replace content in the `about` and `Website Link` files
-4. To provide any guidance about generating project content, insert notes in the top cell on the `project` sheet.
+4. To provide any guidance about generating project content, insert notes in the top cell on the `project` sheet
 
 ## GitHub Setup ##
 5. Get invited as a member of [CEEO Innovations](https://github.com/ceeoinnovations) repository

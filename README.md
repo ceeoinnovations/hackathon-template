@@ -24,7 +24,7 @@
 12. Update `readme.md` in your GitHub repository. Get rid of this instructions except for the Links section on top. Replace links to your website and Google Drive folder.
 
 ## Adding Content ##
-13. Share a link to your Google folder with people and let them fill out the content in the `project` sheets. Make sure that people upload their files in their own folder under the assets folder and get link to host their images or videos. They can hover top cells in the sheets for tips.
+13. Share a link to your Google folder with people and let them fill out the content in the `project` sheets. Make sure that people upload their files in their own folder under the assets folder and get proper links to host their images or videos. They can hover top cells in the sheets for tips.
 14. Make sure that anyone with links can view images and videos. Otherwise, it won't show up on the website
 15. Go to your website to make sure that everything looks good. It may take a couple of minutes to get updated
 

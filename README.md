@@ -4,7 +4,7 @@
 
 # How to build a Website Using Google Sheets #
 ## Google Drive Setup ##
-1. Create a folder with your website name in CEEO Google Drive. Allow anyone from CEEO can **edit** files in the folder
+1. Create a folder with your website name in the CEEO Google Drive. Allow anyone from CEEO can **edit** files in the folder
 2. Duplicate files and [this folder](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing) in Google Drive
 * `assets` folder: all images, videos, files. Allow anyone with links can **view** the files in it
 * `about`sheets: information about your website

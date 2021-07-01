@@ -22,7 +22,7 @@ export function ProjectItems(projects){
                 <div class="info">
                     <div class="project-overview">
                         <div class="project-title">
-                            <a href="?project=${d.id}"><strong>${d.title}</strong></a>
+                            <a href="?project=${d.title}"><strong>${d.title}</strong></a>
                         </div>
                     <div class="project-subtitle">
                         ${d.subtitle}<br>

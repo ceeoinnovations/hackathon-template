@@ -29,10 +29,8 @@ export function ProjectDetail(d){
         ${d.video}
         </div>
         
-        <img src="${getImageURL(d.teaser)}" div class="project-teaser">
-        <img src="${getImageURL(d.image1)}" div class="project-teaser">
-        <img src="${getImageURL(d.image2)}" div class="project-teaser">
-        <img src="${getImageURL(d.image3)}" div class="project-teaser">
+        <img src="${getImageURL(d.image)}" div class="project-teaser">
+
 
         <div class="row">
             <div class="col-9">

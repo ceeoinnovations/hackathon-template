@@ -28,5 +28,5 @@
 
 ## Project Submission ##
 * Share a form link with people to gather data
-** If you want to hide a specific project, open the `projects` sheets and move the project data to the `hidden` tab
+* If you want to hide a specific project, open the `projects` sheets and move the project data to the `hidden` tab
 * Go to your website to see updates. It may take a couple of minutes to get updated

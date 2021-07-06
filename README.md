@@ -13,14 +13,14 @@
 * `Submission Form (File responses)`: **Do not create this folder manually**. It will be automatically created as you gather form responses 
 3. Replace placeholder text with your data in the `about`sheet
 * `website`: get your website link once setting up GitHub
-* `form`: copy and past your newly created form link
-4. Open the form. In the top left under `Responses`, click `Summary`. In the top right, click More and `Select response destination`. Choose an option of `Select existing spreadsheet`. Choose from your existing `projects` spreadsheets to store responses
+* `form`: open the form and click `Send` and then `Link` tab to find a form link
+4. To link the form and the spreadsheets, open the form. In the top left under `Responses`, click `Summary`. In the top right, click More and `Select response destination`. Choose an option of `Select existing spreadsheet`. Choose from your existing `projects` spreadsheets to store responses
 
 ## GitHub Setup ##
 1. Get invited as a member of [CEEO Innovations](https://github.com/ceeoinnovations) repository
 2. Click `Use this template` on this repository to create a new repository 
 3. Select `ceeoinnovations` as owner. Name the repository with your hackathon name. It will be a part of your website address so make sure that it is unique and it represents your hackathon well. Make it `public`
-4. Go to `index.js` and replace the existing csv file URLs (line #9, #10) with yours. To get links to your Google Sheets, click `File` and then `Publish to the web` on Google Sheets. Select `Entire Document` and `csv` then click `Publish`. The first csv file URL is for about and the second one is for projects
+4. Go to `index.js` and replace the existing csv file URLs (line #9, #10) with yours. To get links to your Google Sheets, open the spreadsheets; click `File` and then `Publish to the web`. Select `Entire Document` and `csv` then click `Publish`. The first csv file URL is for about and the second one is for projects
 5. Go to `index.html` and edit title (line #4). 
 6. Go to `components/Navbar.js` and update the hyperlink with your GitHub repository name (line #7) 
 7. To publish your website, go to `Settings`, click `Pages`, select `main` as a source, and save. You can find your website link there.

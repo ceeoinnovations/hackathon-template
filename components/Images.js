@@ -24,11 +24,16 @@ export default function GetImageURL(image){
     }
 }
 
-
 export function templateIdFrom(url) {
     url.toString();
     let match = url.href.match(/([a-z0-9_-]{25,})[$/&?]/i);
     return match[1];
     // 1. /([a-z0-9_-]{25,})[$/&?]/i
     // 2. /\/d\/(.+)\//
+}
+
+export function createTeaser(images) {
+    // make the first image teaser
+    let imageArray = images.split(', ');
+    let teaser = imageArray[0];
 }

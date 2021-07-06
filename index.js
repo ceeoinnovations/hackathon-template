@@ -18,7 +18,7 @@ Promise.all([
     if (params.get('project')==null){
         MainPage(data);
     }else{
-        let project = data.projects.find(d=>d.id===params.get('project'));
+        let project = data.projects.find(d=>d.title===params.get('project'));
         Navbar('project')
         ProjectPage(project, about);
     }    

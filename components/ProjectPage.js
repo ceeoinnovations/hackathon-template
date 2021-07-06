@@ -3,6 +3,7 @@ import Navbar from './Navbar.js';
 import Footer from './Footer.js';
 
 export default function ProjectPage(project, about){
+
     document.querySelector('.container').innerHTML = `
         ${Navbar('project')}
         ${ProjectDetail(project)}

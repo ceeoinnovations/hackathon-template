@@ -14,7 +14,7 @@
 3. Replace placeholder text with your data in the `about`sheet
 * `website`: get your website link once setting up GitHub
 * `form`: copy and past your newly created form link
-4. Open the form. In the top left under `Responses`, click `Summary`. In the top right, click More and `Select response destinatio`n. Choose an option of `Select existing spreadsheet`. Choose from your existing `projects` spreadsheets to store responses
+4. Open the form. In the top left under `Responses`, click `Summary`. In the top right, click More and `Select response destination`. Choose an option of `Select existing spreadsheet`. Choose from your existing `projects` spreadsheets to store responses
 
 ## GitHub Setup ##
 1. Get invited as a member of [CEEO Innovations](https://github.com/ceeoinnovations) repository

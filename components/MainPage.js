@@ -8,7 +8,7 @@ export default function MainPage(data){
     document.querySelector('.container').innerHTML = `
         ${Navbar(data.about)}
         ${About(data.about)}
-        ${Projects(data.projects)}
+        ${Projects(data.projects, data.about)}
         ${Footer(data.about)}
     `
 }

@@ -27,6 +27,6 @@
 8. Update `readme.md` in your GitHub repository. Get rid of all the instructions except for the Links section on top. Replace all three links with yours
 
 ## Project Submission ##
-* Share a website link with people and ask them to click `Submit Project` to gather data
+* Share a website link with people and ask them to click `Submit Project` to submit their data
 * If you want to hide a specific project, open the `projects` sheets and move the project data to the `hidden` tab
 * Go to your website to see updates. It may take a couple of minutes to get updated

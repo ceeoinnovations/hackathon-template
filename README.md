@@ -1,4 +1,4 @@
-## Links ##
+# Links #
 * [Website](https://ceeoinnovations.github.io/hackathon-template/)
 * [Submission Form](https://forms.gle/hh6YKpvqwNo9PTt47)
 * [Data (Google Drive)](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing)

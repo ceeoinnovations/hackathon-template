@@ -1,6 +1,4 @@
 export default function GetImageURL(image){
-    
-
     if (image===""){
         return '';
         // assets/global/project-placeholder.png
@@ -51,4 +49,27 @@ export function GetImageArr(images){
     // convert comma separated string into an array 
     let imageArray = images.split(', ');
     return imageArray;
+}
+
+export function GetEmbedVideo(video){
+    // https://drive.google.com/open?id=1GMGi4L22EsxRAlxk8s9PPiAUlSqCd6oP
+    // <iframe src="https://drive.google.com/file/d/1a0d6L2N4rsP4ZeGVNuheLJa0pJeVauJd/preview" width="640" height="480"></iframe>
+
+    if (video===""){
+        return '';
+    }else if (video.startsWith("http") && video.includes("drive.google.com")){
+        // for Google Form auto-generated link
+        const url = new URL(video); 
+        const urlParams = new URLSearchParams(url.search);
+        if (urlParams.get("id")){
+            return `<iframe src="https://drive.google.com/file/d/${urlParams.get("id")}/preview" width="640" height="480"></iframe>`;
+        }else{
+            const id = video.split('/').slice(-2)[0];// second from last
+            return `https://drive.google.com/file/d/${id}/preview`;
+        }
+
+    }else{
+        return video;
+    }
+
 }

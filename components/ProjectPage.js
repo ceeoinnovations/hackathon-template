@@ -1,4 +1,4 @@
-import GetImageURL, {GetImageArr} from './Images.js';
+import GetImageURL, {GetImageArr, GetEmbedVideo} from './Images.js';
 import Navbar from './Navbar.js';
 import Footer from './Footer.js';
 
@@ -10,7 +10,6 @@ export default function ProjectPage(project, about){
         ${Footer(about)}
     `
 }
-
 
 export function ProjectDetail(d){
     return `
@@ -27,7 +26,7 @@ export function ProjectDetail(d){
         </div>
         
         <div class="videoWrapper">
-        ${d.video}
+            ${GetEmbedVideo(d.video)}
         </div>
         
         ${ImageItems(d.images)}

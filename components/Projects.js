@@ -13,7 +13,6 @@ export default function Projects(projects){
 }
 
 export function ProjectItems(projects){
-    console.log(projects);
     return projects.map(d=>`
         <div class="project-box">
                 <img src="${(GetTeaserURL(d.images))}" div class="teaser">

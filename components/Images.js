@@ -25,12 +25,10 @@ export default function GetImageURL(image){
 }
 
 export function GetTeaserURL(images){
-    console.log(images);
     GetImageArr(images);
 
     // convert comma separated string into an array 
     let imageArray = images.split(', ');
-    console.log(imageArray);
     // make the first image teaser
     let teaser = imageArray[0];
     teaser = GetImageURL(teaser);

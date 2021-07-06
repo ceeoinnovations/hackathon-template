@@ -1,4 +1,4 @@
-import getImageURL, {templateIdFrom} from './Images.js';
+import GetImageURL, {GetImageArr} from './Images.js';
 import Navbar from './Navbar.js';
 import Footer from './Footer.js';
 
@@ -30,8 +30,7 @@ export function ProjectDetail(d){
         ${d.video}
         </div>
         
-        <img src="${getImageURL(d.image)}" div class="project-teaser">
-
+        ${ImageItems(d.images)}
 
         <div class="row">
             <div class="col-9">
@@ -40,9 +39,14 @@ export function ProjectDetail(d){
                 </p>
                 <br>
             </div>
-            
         </div>
-    
     </section>
     `
+}
+
+export function ImageItems(images){
+    let arr = GetImageArr(images);
+    return arr.map(d=>`
+        <img src="${GetImageURL(d)}" div class="project-teaser">
+        `).join('');
 }

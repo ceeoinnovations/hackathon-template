@@ -1,12 +1,10 @@
-import getImageURL, {templateIdFrom} from './Images.js';
+import GetImageURL, {GetTeaserURL} from './Images.js';
 
 export default function Projects(projects){
     return `
     
     <section id="projects">
         <div class="wrapper">
-            
-  
             <div class="project-list">
                 ${ProjectItems(projects)}
             </div>
@@ -15,10 +13,10 @@ export default function Projects(projects){
 }
 
 export function ProjectItems(projects){
-
+    console.log(projects);
     return projects.map(d=>`
         <div class="project-box">
-                <img src="${getImageURL(d.teaser)}" div class="teaser">
+                <img src="${(GetTeaserURL(d.images))}" div class="teaser">
                 <div class="info">
                     <div class="project-overview">
                         <div class="project-title">

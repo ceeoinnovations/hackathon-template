@@ -1,9 +1,11 @@
 export default function GetImageURL(image){
+    
+
     if (image===""){
         return '';
         // assets/global/project-placeholder.png
     }else if (image.startsWith("http") && image.includes("drive.google.com")){
-        // *--Google Form auto-generated link--*
+        // for Google Form auto-generated link
         const url = new URL(image); 
         const urlParams = new URLSearchParams(url.search);
         if (urlParams.get("id")){
@@ -13,10 +15,10 @@ export default function GetImageURL(image){
             return `https://drive.google.com/uc?export=view&id=${id}`;
         }
 
-        // *--Google Drive sharable link--*
+        // for Google Drive sharable link
         // let id = "";
         // const url = new URL(image);
-        // id = templateIdFrom(url);
+        // id = TemplateIdFrom(url);
         // // console.log('id: ' + id);
         // return `https://drive.google.com/uc?id=${id}`;
     }else{
@@ -24,7 +26,20 @@ export default function GetImageURL(image){
     }
 }
 
-export function templateIdFrom(url) {
+export function GetTeaserURL(images){
+    console.log(images);
+    GetImageArr(images);
+
+    // convert comma separated string into an array 
+    let imageArray = images.split(', ');
+    console.log(imageArray);
+    // make the first image teaser
+    let teaser = imageArray[0];
+    teaser = GetImageURL(teaser);
+    return teaser;
+}
+
+export function TemplateIdFrom(url) {
     url.toString();
     let match = url.href.match(/([a-z0-9_-]{25,})[$/&?]/i);
     return match[1];
@@ -32,8 +47,8 @@ export function templateIdFrom(url) {
     // 2. /\/d\/(.+)\//
 }
 
-export function createTeaser(images) {
-    // make the first image teaser
+export function GetImageArr(images){
+    // convert comma separated string into an array 
     let imageArray = images.split(', ');
-    let teaser = imageArray[0];
+    return imageArray;
 }

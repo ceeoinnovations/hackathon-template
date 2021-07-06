@@ -507,7 +507,12 @@ section{
     
 }
 
+.buttons {
+    text-align: center;
+}
+
 .button {
+    min-width: 240px;
     border: 0px solid;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -517,9 +522,9 @@ section{
     /* width: 100%; */
     /* max-width: 260px; */
     padding: 1rem 3rem;
-    margin-right: 5px;
+    /* margin-right: 5px; */
     transition-duration: 0.2s;
-    display: block;
+    /* display: block; */
     cursor: pointer;
     color: #fff;
     text-align: center;
@@ -527,7 +532,7 @@ section{
     /* font-weight: 600; */
     line-height: 1.5;
     letter-spacing: 0.05rem;
-    margin: 0 auto;
+    margin: 0 2px;
     background-color: #20d489;
     /* #FEFA91; #20d489 #19b674 */
 }

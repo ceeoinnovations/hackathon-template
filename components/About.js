@@ -9,9 +9,15 @@ export default function About(about){
             <div class="project-img">
             <img src="${GetImageURL(about[0].image)}" div class="project-img-holder">
             </div>
-            <a href="${about[0].buttonlink}" target="_blank">
-                <button class="button" style="margin-top: 30px; margin-bottom: 50px;">${about[0].buttonlabel}</button>
-            </a>
+            
+            <div class="buttons">
+                <a href="${about[0].buttonlink}" target="_blank">
+                    <button class="button" style="margin-top: 30px; margin-bottom: 50px;">${about[0].buttonlabel}</button>
+                </a>
+                <a href="${about[0].form}" target="_blank">
+                    <button class="button" style="margin-top: 30px; margin-bottom: 50px;">Submit Project</button>
+                </a>
+            </buttons>
         </div >    
     </section>`
 }

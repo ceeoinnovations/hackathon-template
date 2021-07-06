@@ -8,7 +8,7 @@
 1. Create a folder with your hackathon name in the [CEEO Google Drive](https://drive.google.com/drive/folders/1Q93uWY06GB0Hlg8kT3HfqQGiKK60VgR_?usp=sharing). Allow anyone from CEEO can **edit** files in the folder
 2. Duplicate files in this [folder](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing) in Google Drive
 * `about`: basic information about your website
-* `projects`: projects data
+* `projects`: where projects data will be stored
 * `Submission Form`: project submission form
 * `Submission Form (File responses)`: **Do not create this folder manually**. It will be automatically created as you gather form responses 
 3. Replace placeholder text with your data in the `about`sheet

@@ -290,7 +290,7 @@ section{
 }
 
 .project-title{
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
@@ -362,7 +362,7 @@ section{
     align-items: center; /* align vertical */
 }
 .project-overview{
-    margin: 25px;
+    margin: 15px 20px 15px 20px;
 
 }
 

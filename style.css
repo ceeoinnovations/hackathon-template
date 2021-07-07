@@ -291,7 +291,7 @@ section{
 
 .project-title{
     font-size: 1.35rem;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .project-title a:hover{
@@ -379,14 +379,10 @@ section{
 
 .project-authors{
     color: #a7a6a6;
-    margin-top: 10px;
-    /* text-align: center; */
 }
 
 .project-subtitle{
-    /* text-align: center; */
     color: #a7a6a6;
-    /* font-size: 1.4rem; */
 }
 
 .project-tags{
@@ -488,7 +484,7 @@ section{
 }
 
 .project-box{
-    flex-basis: 18em;
+    flex-basis: 14em;
     border-radius: 20px;
     background-color:#fff;
     margin: 15px;

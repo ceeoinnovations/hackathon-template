@@ -32,10 +32,10 @@ export function ProjectItems(projects){
                             <a href="?project=${d.title}"><strong>${d.title}</strong></a>
                         </div>
                     <div class="project-subtitle">
-                        ${d.subtitle}<br>
+                        ${d.subtitle}
                     </div>
                     <div class="project-authors">
-                        ${d.authors}<br>
+                        ${d.authors}
                     </div>
                     
                 </div>

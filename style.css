@@ -649,7 +649,7 @@ background-color: #19b674;
   /* padding-bottom: 56.25%; 16:9 */
     /* height: 0; */
     width: 100%;
-    height: auto;
+    /* height: auto; */
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -659,7 +659,7 @@ background-color: #19b674;
     /* top: 0;
     left: 0; */
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
   }
 
 @media only screen and (min-width: 768px) {

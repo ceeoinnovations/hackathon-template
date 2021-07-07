@@ -15,6 +15,7 @@ export function ProjectDetail(d){
     return `
     <section id="content" class="project-intro">
         <div class="content-wrapper">
+            <br>
             <div class="row">
             <div class="col-7">
                 <div class="videoWrapper">
@@ -28,12 +29,12 @@ export function ProjectDetail(d){
                     <div class="project-subtitle">
                         ${d.subtitle}
                     </div>
-                    <div class="project-tags" style="color: #a7a6a6;">
-                        By ${d.authors}
-                    </div>
                     <p class="project-desc">
                         ${d.desc}
                     </p>
+                    <div class="project-tags" style="color: #a7a6a6;">
+                        By ${d.authors}
+                    </div>
                 </div>
             </div>
         </div>

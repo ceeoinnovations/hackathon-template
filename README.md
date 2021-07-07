@@ -6,7 +6,7 @@
 # How to build a Hackathon Website Using Google Sheets #
 ## Google Drive Setup ##
 1. Create a folder with your hackathon name in this [CEEO Google Drive](https://drive.google.com/drive/folders/1Q93uWY06GB0Hlg8kT3HfqQGiKK60VgR_?usp=sharing). Allow **anyone from CEEO to edit** files in the folder
-2. Duplicate three files in this [folder](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing) in Google Drive
+2. Duplicate three files below in this [folder](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing) in Google Drive
 * `about`: basic information about your website
 * `Submission Form`: project submission form
 * `Submission Form (File responses)`: images and videos. **Change sharing permission** of this folder so that `Anyone can view`

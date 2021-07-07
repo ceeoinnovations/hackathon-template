@@ -15,8 +15,12 @@ body {
     
 }
 
+p {
+    /* margin-block-start: 0.5em; */
+}
 .intro .title{
-    margin-bottom: 0px;
+    margin-top: 0.35em;
+    margin-bottom: 0px !important;
     font-size: 2.6rem;
     line-height: 1.6em;
     /* color: #20d489; */
@@ -542,11 +546,13 @@ section{
     text-align: center;
     font-size: 1.1rem;
     /* font-weight: 600; */
-    line-height: 1.5;
+    /* line-height: 1.5; */
     letter-spacing: 0.05rem;
     margin: 0 2px;
     background-color: #20d489;
     /* #FEFA91; #20d489 #19b674 */
+    margin-top: 0.5em !important;
+    margin-bottom: 2em !important;
 }
   
 .button:hover {

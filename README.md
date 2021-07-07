@@ -6,15 +6,14 @@
 # How to build a Hackathon Website Using Google Sheets #
 ## Google Drive Setup ##
 1. Create a folder with your hackathon name in the [CEEO Google Drive](https://drive.google.com/drive/folders/1Q93uWY06GB0Hlg8kT3HfqQGiKK60VgR_?usp=sharing). Allow anyone from CEEO can **edit** files in the folder
-2. Duplicate files in this [folder](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing) in Google Drive
+2. Duplicate three files in this [folder](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing) in Google Drive
 * `about`: basic information about your website
-* `projects`: projects data
 * `Submission Form`: project submission form
-* `Submission Form (File responses)`: **Do not create this folder manually**. It will be automatically created as you gather form responses 
+* `Submission Form (File responses)`: images and videos. **Change sharing permission** of this folder so that `Anyone can view`
 3. Replace placeholder text with your data in the `about`sheet
 * `website`: get your website link once setting up GitHub
 * `form`: open the form and click `Send` and then `Link` tab to find a form link
-4. To link the form and the spreadsheets, open the form. In the top left under `Responses`, click `Summary`. In the top right, click More and `Select response destination`. Choose an option of `Select existing spreadsheet`. Choose from your existing `projects` spreadsheets to store responses
+4. To link the form and the spreadsheets, open the form. In the top left under `Responses`, click `Summary`. In the top right, click More and `Select response destination`. Choose an option of `Create a new spreadsheet`. Name that spreadsheet as`projects`
 
 ## GitHub Setup ##
 1. Get invited as a member of [CEEO Innovations](https://github.com/ceeoinnovations) repository

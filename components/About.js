@@ -7,7 +7,6 @@ export default function About(about){
             <h1 class="title">${about[0].name}</h1>
             <p>${about[0].description}</p>
             <div class="project-img">
-            <img src="${GetImageURL(about[0].image)}" div class="project-img-holder">
             </div>
             
                 <a href="${about[0].buttonlink}" target="_blank">

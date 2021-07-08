@@ -14,6 +14,8 @@
 * `website`: you can get your website link once setting up GitHub
 * `form`: open the form in Google Drive and click `Send` and then `Link` tab
 4. Open the form in Google Drive. Click `Responses` and click More icon on the right. Click `Select response destination`. Choose an option of `Create a new spreadsheet`. Name that spreadsheet as`projects`
+
+
 ![alt text](assets/global/gdrive-setup.png)
 
 ## GitHub Setup ##

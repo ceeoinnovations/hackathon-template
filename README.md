@@ -30,5 +30,5 @@
 
 ## Project Submission ##
 * Share a website link with people and ask them to click `Submit Project` to submit their data
-* If you want to hide a specific project, open the `projects` sheets and move the project data to the `hidden` tab
+* If you want to hide a specific project, open the `projects` sheets and create a new tab named `hidden`. Move the project data to the `hidden` tab
 * Go to your website to see updates. It may take a couple of minutes to get updated

@@ -13,7 +13,7 @@
 3. Replace placeholder text with your data in the `about`sheet
 * `website`: you can get your website link once setting up GitHub
 * `form`: open the form in Google Drive and click `Send` and then `Link` tab
-4. Open the form in Google Drive. Click `Responses` and click More icon on the right. Click `Select response destination`. Choose an option of `Create a new spreadsheet`. Name that spreadsheet as`projects`
+4. Open the form in Google Drive. Click `Responses` and click More icon on the right. Click `Select response destination`. Choose an option of `Create a new spreadsheet`. Name that spreadsheet as `projects`
 
 ## GitHub Setup ##
 1. Get invited as a member of [CEEO Innovations](https://github.com/ceeoinnovations) repository

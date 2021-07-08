@@ -19,7 +19,7 @@
 1. Get invited as a member of [CEEO Innovations](https://github.com/ceeoinnovations) repository
 2. Click `Use this template` on this repository to create a new repository 
 3. Select `ceeoinnovations` as owner. Name the repository with your hackathon name. Make it `public`
-* Use lowercase for repository name
+* Use **lowercase** for repository name
 * Repository name should be unique and it describes your hackathon (e.g., smart-motor-hackathon) 
 5. Go to `index.js` and replace the existing csv file URLs (line #9, #10) with yours. 
 * To get links to your Google Sheets, open the spreadsheets; click `File` and then `Publish to the web`. Select `Entire Document` and `csv` then click `Publish`. The first csv file URL is for about and the second one is for projects

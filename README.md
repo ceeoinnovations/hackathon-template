@@ -21,12 +21,12 @@
 3. Select `ceeoinnovations` as owner. Name the repository with your hackathon name. Make it `public`
 * Use **lowercase** for repository name
 * Repository name should be unique and it describes your hackathon (e.g., smart-motor-hackathon) 
-5. Go to `index.js` and replace the existing csv file URLs (line #9, #10) with yours. 
+4. Go to `index.js` and replace the existing csv file URLs (line #9, #10) with yours. 
 * To get links to your Google Sheets, open the spreadsheets; click `File` and then `Publish to the web`. Select `Entire Document` and `csv` then click `Publish`. The first csv file URL is for about and the second one is for projects
-7. Go to `index.html` and edit title (line #4). 
-8. Go to `components/Navbar.js` and update the hyperlink with your GitHub repository name (line #7) 
-9. To publish your website, go to `Settings`, click `Pages`, select `main` as a source, and save. You can find your website link there.
-10. Update `readme.md` in your GitHub repository. Get rid of all the instructions except for the Links section on top. Replace all three links with yours
+5. Go to `index.html` and edit title (line #4). 
+6. Go to `components/Navbar.js` and update the hyperlink with your GitHub repository name (line #7) 
+7. To publish your website, go to `Settings`, click `Pages`, select `main` as a source, and save. You can find your website link there.
+8. Update `readme.md` in your GitHub repository. Get rid of all the instructions except for the Links section on top. Replace all three links with yours
 
 ## Project Submission ##
 * Share a website link with people and ask them to click `Submit Project` to submit their data

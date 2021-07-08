@@ -16,7 +16,7 @@
 4. Open the form in Google Drive. Click `Responses` and click More icon on the right. Click `Select response destination`. Choose an option of `Create a new spreadsheet`. Name that spreadsheet as`projects`
 
 
-![alt text](assets/global/gdrive-setup.png | width=200)
+![alt text](assets/global/gdrive-setup.png){:height="50%" width="50%"}
 
 ## GitHub Setup ##
 1. Get invited as a member of [CEEO Innovations](https://github.com/ceeoinnovations) repository

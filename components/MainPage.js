@@ -1,5 +1,5 @@
 import Navbar from './Navbar.js';
-import About from './About.js';
+import About, {ShowHomeImage} from './About.js';
 import Footer from './Footer.js';
 import Projects, {ProjectItems} from './Projects.js';
 

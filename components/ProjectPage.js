@@ -32,6 +32,7 @@ export function ProjectDetail(d){
                     <p class="project-desc">
                         ${d.desc}
                     </p>
+                    ${AddButton(d.url, d.urlLabel)}
                     <div class="project-tags" style="color: #a7a6a6;">
                         By ${d.authors}
                     </div>
@@ -48,4 +49,17 @@ export function ImageItems(images){
     return arr.map(d=>`
         <img src="${GetImageURL(d)}" div class="project-teaser">
         `).join('');
+}
+
+export function AddButton(url, urlLabel){
+    if (url==="") {
+        return '';
+    }else {
+        return `
+        <a href="${url}" target="_blank">
+            <button class="button" style="margin-top: 30px; margin-bottom: 50px;">${urlLabel}</button>
+        </a>
+
+        `;
+    }
 }

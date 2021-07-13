@@ -37,7 +37,7 @@ export function ProjectDetail(d){
                     </p>
                    
                     
-                    <a href="#popup1" target="_blank">
+                    <a href="#modal-container" target="_blank">
                         <button class="button" style="margin-top: 30px; margin-bottom: 50px;">View Code</button>
                     </a>
                     ${AddButton(d.url, d.urlLabel)}
@@ -48,7 +48,7 @@ export function ProjectDetail(d){
 
                     ${CodeSnippet(d.code)}
 
-                    <div id="popup1" class="overlay">
+                    <div id="modal-container" class="overlay">
                         <div class="popup">
                             <h2>Code</h2>
                             <a class="close" href="#">&times;</a>

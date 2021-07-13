@@ -12,6 +12,9 @@ export default function About(about){
                 <a href="${about[0].buttonlink}" target="_blank">
                     <button class="button" style="margin-top: 30px; margin-bottom: 50px;">${about[0].buttonlabel}</button>
                 </a>
+                <a href="${about[0].resources}" target="_blank">
+                    <button class="button" style="margin-top: 30px; margin-bottom: 50px;">More Resources</button>
+                </a>
         </div>    
     </section>`
 }

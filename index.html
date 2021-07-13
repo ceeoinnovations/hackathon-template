@@ -22,11 +22,21 @@
     
     <link rel="stylesheet" href="style.css" />
 
-    <!-- highlight.js -->
     <link rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
     
+
+    <link href="/components/prism.css" rel="stylesheet" />
+    <script src="/components/prism.js"></script>
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/python.min.js" integrity="sha512-MbDu8Vk2zJLvSEzk4bOYrlcS+9WE39QPnxINj2aftAG63jxOhdP5p2/Ma6/D3C9IkT/xOjZTO8MtBCX8PI48BA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/python-repl.min.js" integrity="sha512-Ud5Jg4PgBsrnnE0GjuwwVMWo71vUNQBc7aWJaK1TY0lYtYBVhk6A63K/P64bOY3N62AQuMFTPodp1zBGwNqXDw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://d3js.org/d3-dsv.v2.min.js"></script>
     <script src="https://d3js.org/d3-fetch.v2.min.js"></script>
     <script src="index.js" type="module" defer></script>
@@ -36,5 +46,7 @@
     <div class="container">
         
     </div>
+    <script>hljs.highlightAll();</script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

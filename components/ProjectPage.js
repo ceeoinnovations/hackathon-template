@@ -1,8 +1,6 @@
 import GetImageURL, {GetImageArr, GetEmbedVideo} from './Images.js';
 import Navbar from './Navbar.js';
 import Footer from './Footer.js';
-// const hljs = require('highlight.js/lib/common');
-// import hljs from 'highlight.js';
 
 export default function ProjectPage(project, about){
 
@@ -37,31 +35,18 @@ export function ProjectDetail(d){
                     </p>
                    
                     
-                    <a href="#modal-container" target="_blank">
-                        <button class="button" style="margin-top: 30px; margin-bottom: 50px;">View Code</button>
-                    </a>
+                    ${CodeSnippet(d.code)}
                     ${AddButton(d.url, d.urlLabel)}
 
                     <div class="project-tags" style="color: #a7a6a6;">
                         By ${d.authors}
-                    </div>
-
-                    ${CodeSnippet(d.code)}
-
-                    <div id="modal-container" class="overlay">
-                        <div class="popup">
-                            <h2>Code</h2>
-                            <a class="close" href="#">&times;</a>
-                            <div class="content">
-                                <pre><code class="hljs">${d.code}</code></pre>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
     </section>
+
     `
 }
 
@@ -90,7 +75,11 @@ export function CodeSnippet(code){
         return '';
     }else {
         return `
-            <pre><code class="hljs">${code}</code></pre>
+        <h4>Code</h4>
+            <pre><code class="python">${code}</code></pre>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
         `;
     }
 }

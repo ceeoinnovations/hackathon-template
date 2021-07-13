@@ -421,9 +421,15 @@ section{
 }
 
 pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
     display: flex-root;
     clear: both;
     width: 100%;
+    background: #eee;
+}
+
+code {
+    border-radius: 15px;
 }
 
 
@@ -790,23 +796,40 @@ background-color: #19b674;
     border-radius: 25px;
 }
 
-.overlay {
+.modal-container {
     position: fixed;
     top: 0;
-    bottom: 0;
+    /* bottom: 0; */
     left: 0;
-    right: 0;
+    /* right: 0; */
     background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: opacity 500ms; */
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    height: 100vh;
+    width: 100vw;
   }
-  .overlay:target {
+  .modal-container:target {
     visibility: visible;
     opacity: 1;
   }
+
+  .modal {
+      background-color: #fff;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      
+  }
   
-  .popup {
+  /* .modal-container {
+    display: none;
     margin: 70px auto;
     padding: 20px;
     background: #fff;
@@ -814,14 +837,14 @@ background-color: #19b674;
     width: 30%;
     position: relative;
     transition: all 5s ease-in-out;
-  }
+  } */
 
-  .popup h2 {
+  .modal h2 {
     margin-top: 0;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
   }
-  .popup .close {
+  .modal .close {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -831,10 +854,10 @@ background-color: #19b674;
     text-decoration: none;
     color: #333;
   }
-  .popup .close:hover {
+  .modal .close:hover {
     color: #06D85F;
   }
-  .popup .content {
+  .modal .content {
     max-height: 30%;
     overflow: auto;
   }
@@ -843,7 +866,7 @@ background-color: #19b674;
     .box{
       width: 70%;
     }
-    .popup{
+    .modal{
       width: 70%;
     }
   }

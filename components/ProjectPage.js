@@ -4,10 +4,7 @@ import Footer from './Footer.js';
 import Projects, {ProjectItems} from './Projects.js';
 
 export default function ProjectPage(project, about){
-    function MaxiChange(order){
-        alert(order);
-    }
-
+    
     document.querySelector('.container').innerHTML = `
         ${Navbar('project')}
         ${ProjectDetail(project, about)}
@@ -42,9 +39,7 @@ export function ProjectDetail(d, about){
                         ${d.desc}
                     </p>
                    
-                    
                     ${CodeSnippet(d.code)}
-
                     ${AddButton(d.url, d.urlLabel)}
 
                     <div class="project-tags" style="color: #a7a6a6;">
@@ -62,7 +57,7 @@ export function ImageItems(images){
     let arr = GetImageArr(images);
 
     return arr.map(d=>`
-        <img onclick="MaxiChange(0)" src="${GetImageURL(d)}">
+        <img onclick="ChangeMaxi(0)" src="${GetImageURL(d)}">
         `).join('');
 }
 
@@ -86,9 +81,6 @@ export function CodeSnippet(code){
         return `
         <h4>Code</h4>
             <pre><code class="python">${code}</code></pre>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
         `;
     }
 }
@@ -101,3 +93,6 @@ export function ShowMaxi(video, images){
     }
 }
 
+export function ChangeMaxi(number){
+    alert(number);
+}

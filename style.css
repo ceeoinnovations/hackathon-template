@@ -467,6 +467,56 @@ code {
     /* border: 0.5px solid rgb(233, 231, 231); */
 }
 
+.gallery {
+    width: 100%;
+    /* display: block; */
+    margin: auto;
+    margin-top: 30px;
+    /* box-shadow: 5px 20px 60px 10px Gray; */
+}
+
+.mini {
+}
+
+.mini img {
+    object-fit: cover;
+    width: 19%;
+    height: 80px;
+    float: left;
+    margin: 4px 4px 0px 0px;
+    cursor: pointer;
+}
+
+.mini iframe {
+    object-fit:cover;
+    width: 19%;
+    height: 80px;
+    float: left;
+    margin: 4px 4px 0px 0px;
+    cursor: pointer;
+}
+  
+.mini img:nth-of-type(4) {
+    margin-right: 0px;
+}
+  
+.maxi {
+    width: 100%;
+    height: 360px;
+    display: block;
+}
+
+.maxi iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.maxi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .about-teaser{
     /* border-radius: 5px; */
     width: 80%;
@@ -551,7 +601,7 @@ code {
 }
 
 .button {
-    min-width: 240px;
+    min-width: 230px;
     border: 0px solid;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -674,14 +724,15 @@ background-color: #19b674;
     margin-top: 5px;
 }
 
+
 .videoWrapper{
     /* position: relative; */
   /* padding-bottom: 56.25%; 16:9 */
     /* height: 0; */
     width: 100%;
     /* height: auto; */
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
 }
 
 .videoWrapper iframe {

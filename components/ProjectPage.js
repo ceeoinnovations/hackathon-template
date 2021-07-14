@@ -1,28 +1,36 @@
-import GetImageURL, {GetImageArr, GetEmbedVideo} from './Images.js';
+import GetImageURL, {GetImageArr, GetEmbedVideo, GetTeaserURL} from './Images.js';
 import Navbar from './Navbar.js';
 import Footer from './Footer.js';
+import Projects, {ProjectItems} from './Projects.js';
 
 export default function ProjectPage(project, about){
+    function MaxiChange(order){
+        alert(order);
+    }
 
     document.querySelector('.container').innerHTML = `
         ${Navbar('project')}
-        ${ProjectDetail(project)}
+        ${ProjectDetail(project, about)}
         ${Footer(about)}
     `
 }
 
-export function ProjectDetail(d){
+export function ProjectDetail(d, about){
     return `
     <section id="content" class="project-intro">
         <div class="content-wrapper">
             <br>
             <div class="row">
             <div class="col-6">
-                <div class="videoWrapper">
+                <div class="gallery">
+                    <div class="maxi">
+                    ${ShowMaxi(d.video, d.images)}
+                    </div>
+                    <div class="mini">
                     ${GetEmbedVideo(d.video)}
+                    ${ImageItems(d.images)}
+                    </div>
                 </div>
-                ${ImageItems(d.images)}
-                
             </div>
             <div class="col-6">
                 <div class="project-info">
@@ -36,6 +44,7 @@ export function ProjectDetail(d){
                    
                     
                     ${CodeSnippet(d.code)}
+
                     ${AddButton(d.url, d.urlLabel)}
 
                     <div class="project-tags" style="color: #a7a6a6;">
@@ -46,14 +55,14 @@ export function ProjectDetail(d){
         </div>
 
     </section>
-
     `
 }
 
 export function ImageItems(images){
     let arr = GetImageArr(images);
+
     return arr.map(d=>`
-        <img src="${GetImageURL(d)}" div class="project-teaser">
+        <img onclick="MaxiChange(0)" src="${GetImageURL(d)}">
         `).join('');
 }
 
@@ -83,3 +92,12 @@ export function CodeSnippet(code){
         `;
     }
 }
+
+export function ShowMaxi(video, images){
+    if (video==="") {
+        return `<img src="${(GetTeaserURL(images))}"></img>`;
+    } else {
+        return `${GetEmbedVideo(video)}`;   
+    }
+}
+

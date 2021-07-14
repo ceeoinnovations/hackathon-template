@@ -20,7 +20,7 @@ Promise.all([
         Navbar('project')
         ProjectPage(project, about);
         hljs.highlightAll();
-    }    
+    }  
 });
 
 

@@ -477,14 +477,14 @@ code {
 
 .mini {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 2px;
     margin: 0 auto;
 }
 
 .mini img {
     width: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
     /* width: 19%; */
     height: 60px;
     /* float: left; */

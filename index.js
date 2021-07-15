@@ -21,6 +21,10 @@ Promise.all([
         Navbar('project')
         ProjectPage(project, about);
         hljs.highlightAll();
+        lightGallery(document.getElementById('lightgallery'), {
+            plugins: [lgZoom, lgThumbnail, lgVideo],
+            speed: 500
+        });
     }  
 });
 

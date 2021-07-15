@@ -1,15 +1,19 @@
 import GetImageURL, {GetImageArr, GetEmbedVideo, GetTeaserURL} from './Images.js';
 import Navbar from './Navbar.js';
 import Footer from './Footer.js';
+const opacity = 0.6;
 
 export default function ProjectPage(project, about){
-    
+
     document.querySelector('.container').innerHTML = `
         ${Navbar('project')}
         ${ProjectDetail(project, about)}
         ${Footer(about)}
     `
+    GalleryInteraction();
 }
+
+
 
 export function ProjectDetail(d, about){
 
@@ -45,8 +49,6 @@ export function ProjectDetail(d, about){
     </section>
     `
 }
-
-
 
 export function ImageItems(images){
     let arr = GetImageArr(images);
@@ -103,6 +105,23 @@ export function ShowMaxi(video, images){
     }
 }
 
-export function ChangeMaxi(number){
-    alert(number);
+export function GalleryInteraction(){
+    const current = document.querySelector('#current');
+    const mini = document.querySelectorAll('.mini img');
+
+    // Set first image opacity
+    mini[0].style.opacity = opacity;
+
+    mini.forEach(img => img.addEventListener('click', ImgClick));
+
+    function ImgClick(e) {
+        // Reset the opacity
+        mini.forEach(img => (img.style.opacity = 1));
+    
+        // Change current image to src of clicked image
+        current.src = e.target.src;
+        
+        // Change the opacity to opacity var
+        e.target.style.opacity = opacity;
+    }
 }

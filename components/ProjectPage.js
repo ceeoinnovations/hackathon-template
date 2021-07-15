@@ -19,15 +19,7 @@ export function ProjectDetail(d, about){
             <br>
             <div class="row">
             <div class="col-6">
-                <div class="gallery">
-                    <div class="maxi">
-                    ${ShowMaxi(d.video, d.images)}
-                    </div>
-                    <div class="mini">
-                    ${GetEmbedVideo(d.video)}
-                    ${ImageItems(d.images)}
-                    </div>
-                </div>
+                ${Gallery(d.video, d.images)}
             </div>
             <div class="col-6">
                 <div class="project-info">
@@ -38,13 +30,11 @@ export function ProjectDetail(d, about){
                     <p class="project-desc">
                         ${d.desc}
                     </p>
-                   
                     ${CodeSnippet(d.code)}
                     ${AddButton(d.url, d.urlLabel)}
                     <a href="${d.resources}" target="_blank">
                         <button class="button" style="margin-top: 30px; margin-bottom: 50px;">More Resources</button>
                     </a>
-
                     <div class="project-tags" style="color: #a7a6a6;">
                         By ${d.authors}
                     </div>
@@ -86,6 +76,18 @@ export function CodeSnippet(code){
             <pre><code class="python">${code}</code></pre>
         `;
     }
+}
+
+export function Gallery(video, images){
+    <div class="gallery">
+        <div class="maxi">
+        ${ShowMaxi(video, images)}
+        </div>
+        <div class="mini">
+        ${GetEmbedVideo(video)}
+        ${ImageItems(images)}
+        </div>
+    </div>
 }
 
 export function ShowMaxi(video, images){

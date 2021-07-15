@@ -477,15 +477,16 @@ code {
 
 .mini {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-gap: 2px;
+    margin: 0 auto;
 }
 
 .mini img {
     width: 100%;
     /* object-fit: cover; */
     /* width: 19%; */
-    height: 80px;
+    height: 60px;
     /* float: left; */
     /* margin: 4px 4px 0px 0px; */
     cursor: pointer;
@@ -493,7 +494,7 @@ code {
 
 .mini iframe {
     width: 100%;
-    height: 80px;
+    height: 60px;
     object-fit: cover;
     /* height: 100%; */
     /* object-fit:cover;
@@ -513,11 +514,13 @@ code {
     height: 300px;
     display: block;
     object-fit: cover;
+    margin-bottom: 3px;
 }
 
 .maxi iframe {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .maxi img {

@@ -1,19 +1,21 @@
 # Links #
 * [Website](https://ceeoinnovations.github.io/hackathon-template/)
-* [Submission Form](https://forms.gle/hh6YKpvqwNo9PTt47)
 * [Data (Google Drive)](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing)
 
 # How to build a Hackathon Website Using Google Sheets #
 ## Google Drive Setup ##
-1. Create a folder with your hackathon name in this [CEEO Google Drive](https://drive.google.com/drive/folders/1Q93uWY06GB0Hlg8kT3HfqQGiKK60VgR_?usp=sharing). Allow **anyone from CEEO to edit** files in the folder
+1. Create a folder with your hackathon name in this [CEEO Google Drive](https://drive.google.com/drive/folders/1Q93uWY06GB0Hlg8kT3HfqQGiKK60VgR_?usp=sharing). **Change sharing permission** of this folder so that `Anyone from CEEO can edit`
 2. Make a copy of the three files below in this [folder](https://drive.google.com/drive/folders/1E49pAmqL3kGckYD4MxFROPWgxLSnGrCE?usp=sharing) and move them to your folder in Google Drive
-* `about`: basic information about your website
+* `about`: basic information required to build your website
 * `Submission Form`: project submission form
 * `Submission Form (File responses)`: images and videos. **Change sharing permission** of this folder so that `Anyone can view`
-3. Replace all the placeholder text with your data in the `about`sheet
+* `Resources`: a folder where people can upload other files. **Change sharing permission** of this folder so that `Anyone can edit`
+3. Open the form in Google Drive. Click `Responses` and click More icon on the right. Click `Select response destination`. Choose an option of `Create a new spreadsheet`. Name that spreadsheet as `projects`
+4. Replace all the placeholder text with your data in the `about`sheet
 * `website`: you can get your website link once setting up GitHub
 * `form`: open the form in Google Drive and click `Send` and then `Link` tab to find a form link
-4. Open the form in Google Drive. Click `Responses` and click More icon on the right. Click `Select response destination`. Choose an option of `Create a new spreadsheet`. Name that spreadsheet as `projects`
+* `resources`: copy and paste a sharable link of the `Resources` folder
+* `image`: in case having an image on your home page is helpful, upload an image to the `Resources` folder and copy and paste a sharable link
 
 ## GitHub Setup ##
 1. Get invited as a member of [CEEO Innovations](https://github.com/ceeoinnovations) repository

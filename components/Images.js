@@ -60,7 +60,7 @@ export function GetEmbedVideo(video){
         const url = new URL(video); 
         const urlParams = new URLSearchParams(url.search);
         if (urlParams.get("id")){
-            return `<iframe src="https://drive.google.com/file/d/${urlParams.get("id")}/preview" width="640" height="480"></iframe>`;
+            return `<iframe id="current" src="https://drive.google.com/file/d/${urlParams.get("id")}/preview" width="640" height="480"></iframe>`;
         }else{
             const id = video.split('/').slice(-2)[0];// second from last
             return `https://drive.google.com/file/d/${id}/preview`;

@@ -1,7 +1,6 @@
 import GetImageURL, {GetImageArr, GetEmbedVideo, GetTeaserURL} from './Images.js';
 import Navbar from './Navbar.js';
 import Footer from './Footer.js';
-import Projects, {ProjectItems} from './Projects.js';
 
 export default function ProjectPage(project, about){
     
@@ -13,6 +12,7 @@ export default function ProjectPage(project, about){
 }
 
 export function ProjectDetail(d, about){
+
     return `
     <section id="content" class="project-intro">
         <div class="content-wrapper">
@@ -57,7 +57,7 @@ export function ImageItems(images){
     let arr = GetImageArr(images);
 
     return arr.map(d=>`
-        <img onclick="ChangeMaxi(0)" src="${GetImageURL(d)}">
+        <img src="${GetImageURL(d)}">
         `).join('');
 }
 
@@ -87,7 +87,7 @@ export function CodeSnippet(code){
 
 export function ShowMaxi(video, images){
     if (video==="") {
-        return `<img src="${(GetTeaserURL(images))}"></img>`;
+        return `<img id="current" src="${(GetTeaserURL(images))}"></img>`;
     } else {
         return `${GetEmbedVideo(video)}`;   
     }

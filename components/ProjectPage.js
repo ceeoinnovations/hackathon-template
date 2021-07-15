@@ -31,7 +31,7 @@ export function ProjectDetail(d, about){
                         ${d.desc}
                     </p>
                     ${CodeSnippet(d.code)}
-                    ${AddButton(d.url, d.urlLabel)}
+                    ${CustomButton(d.url, d.urlLabel)}
                     <a href="${d.resources}" target="_blank">
                         <button class="button" style="margin-top: 30px; margin-bottom: 50px;">More Resources</button>
                     </a>
@@ -46,6 +46,8 @@ export function ProjectDetail(d, about){
     `
 }
 
+
+
 export function ImageItems(images){
     let arr = GetImageArr(images);
 
@@ -54,7 +56,8 @@ export function ImageItems(images){
         `).join('');
 }
 
-export function AddButton(url, urlLabel){
+
+export function CustomButton(url, urlLabel){
     if (url==="") {
         return '';
     }else {
@@ -79,6 +82,7 @@ export function CodeSnippet(code){
 }
 
 export function Gallery(video, images){
+    return `
     <div class="gallery">
         <div class="maxi">
         ${ShowMaxi(video, images)}
@@ -88,6 +92,7 @@ export function Gallery(video, images){
         ${ImageItems(images)}
         </div>
     </div>
+    `
 }
 
 export function ShowMaxi(video, images){

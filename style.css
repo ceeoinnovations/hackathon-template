@@ -475,6 +475,13 @@ code {
     /* box-shadow: 5px 20px 60px 10px Gray; */
 }
 
+.inline-gallery-container {
+    width: 700px;
+    height: 500px;
+    position: relative;
+}
+
+  
 .mini {
     display: grid;
     grid-template-columns: repeat(6, 1fr);

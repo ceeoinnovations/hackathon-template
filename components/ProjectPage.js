@@ -11,19 +11,20 @@ export default function ProjectPage(project, about){
         ${Footer(about)}
     `
     SetGallery();
-    DynamicGallery();
+    
 }
 
 
 
 export function ProjectDetail(d, about){
-
+    
     return `
     <section id="content" class="project-intro">
         <div class="content-wrapper">
             <br>
             <div class="row">
             <div class="col-6">
+               
                 ${Gallery(d.video, d.images)}
                 
             </div>
@@ -45,9 +46,6 @@ export function ProjectDetail(d, about){
                         By ${d.authors}
                     </div>
 
-                    <button type="button" class="btn btn-success" id="dynamic-gallery-demo">Launch Gallery</button>
-                    
-                    ${Test()}
                 </div>
             </div>
         </div>
@@ -135,17 +133,81 @@ export function SetGallery(){
     }
 }
 
-export function Test() {
+export function Lightgallery() {
     return `
-    <div id="lightgallery">
-        <a href="assets/teaser.png" data-lg-size="1600-2400">
-            <img alt=".." src="assets/global/teaser.png" />
-        </a>
-        <a href="assets/teaser.png" data-lg-size="1024-800">
-            <img alt=".." src="assets/global/teaser.png" />
-        </a>
-    </div>
+        <div id="inline-gallery-container" class="inline-gallery-container"></div>
     `
+}
+
+export function SetLightgallery(video, images) {
+    const $lgContainer = document.getElementById("inline-gallery-container");
+
+    const inlineGallery = lightGallery($lgContainer, {
+        container: $lgContainer,
+        dynamic: true,
+        // Turn off hash plugin in case if you are using it
+        // as we don't want to change the url on slide change
+        hash: false,
+        // Do not allow users to close the gallery
+        closable: false,
+        // Add maximize icon to enlarge the gallery
+        showMaximizeIcon: false,
+        // Append caption inside the slide item
+        // to apply some animation for the captions (Optional)
+        // appendSubHtmlTo: ".lg-item",
+        // Delay slide transition to complete captions animations
+        // before navigating to different slides (Optional)
+        // You can find caption animation demo on the captions demo page
+        slideDelay: 200,
+        plugins: [lgZoom, lgThumbnail, lgVideo],
+        dynamicEl: [
+            {
+            src:
+                "https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1400&q=80",
+            responsive:
+                "https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80 800",
+            thumb:
+                "https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80",
+            subHtml: ``
+            },
+            {
+            video: {"source": [{"src":"https://www.lightgalleryjs.com//videos/video1.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "controls": true}},
+            thumb:
+                "https://www.lightgalleryjs.com//images/demo/html5-video-poster.jpg",
+            subHtml: ``
+            },
+            {
+            src:
+                "https://images.unsplash.com/photo-1477322524744-0eece9e79640?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+            responsive:
+                "https://images.unsplash.com/photo-1477322524744-0eece9e79640?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1477322524744-0eece9e79640?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800",
+            thumb:
+                "https://images.unsplash.com/photo-1477322524744-0eece9e79640?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80"
+            },
+            {
+            src: "//www.youtube.com/watch?v=egyIeygdS_E",
+            poster: "https://img.youtube.com/vi/egyIeygdS_E/maxresdefault.jpg",
+            thumb: "https://img.youtube.com/vi/egyIeygdS_E/maxresdefault.jpg"
+            }
+        ],
+
+        // Completely optional
+        thumbWidth: 60,
+        thumbHeight: "40px",
+        thumbMargin: 4
+    });
+
+    setTimeout(() => {
+        inlineGallery.openGallery();
+    }, 200);
+}
+
+export function SourceItems(images){
+    let arr = GetImageArr(images);
+
+    return arr.map(d=>`
+        <img src="${GetImageURL(d)}">
+        `).join('');
 }
 
 export function DynamicGallery() {

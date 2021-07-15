@@ -41,6 +41,9 @@ export function ProjectDetail(d, about){
                    
                     ${CodeSnippet(d.code)}
                     ${AddButton(d.url, d.urlLabel)}
+                    <a href="${d.resources}" target="_blank">
+                        <button class="button" style="margin-top: 30px; margin-bottom: 50px;">More Resources</button>
+                    </a>
 
                     <div class="project-tags" style="color: #a7a6a6;">
                         By ${d.authors}

@@ -59,6 +59,7 @@ export function GetMediaArr(videoString, imageString){
     };
     console.log('test');
     console.log(videoObj);
+
     if (videoString != "") {
         // mediaString = videoString.concat("," + imageString);
         videoObj.video.source.src = videoString;
@@ -162,8 +163,6 @@ export function Lightgallery() {
 
 export function SetLightgallery(mediaArr) {
     const $lgContainer = document.getElementById("inline-gallery-container");
-    console.log('test');
-    console.log(obj);
     const inlineGallery = lightGallery($lgContainer, {
         container: $lgContainer,
         dynamic: true,

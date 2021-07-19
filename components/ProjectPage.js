@@ -51,17 +51,27 @@ export function ProjectDetail(d, about){
 }
 
 export function GetMediaArr(videoString, imageString){
-    let mediaString
+    let mediaString;
+    let mediaArr = [];
+    let videoObj = {
+        video: {"source": [{"src":"", "type":"video/mp4"}], "attributes": {"preload": false, "controls": true}},
+        thumb: ""
+    };
+    console.log('test');
+    console.log(videoObj);
     if (videoString != "") {
-        mediaString = videoString.concat("," + imageString);
+        // mediaString = videoString.concat("," + imageString);
+        videoObj.video.source.src = videoString;
+        mediaArr.push(videoObj);
+        console.log(mediaArr);
     } else {
         mediaString = imageString;
-    }
+    };
     
     mediaString = mediaString.replace(/\s/g, '');
     console.log('mediaString:' + mediaString);
     
-    let mediaArr = mediaString.split(',');
+    mediaArr = mediaString.split(',');
 
     mediaArr = mediaArr.map(d=> {
         let obj = {
@@ -152,16 +162,6 @@ export function Lightgallery() {
 
 export function SetLightgallery(mediaArr) {
     const $lgContainer = document.getElementById("inline-gallery-container");
-    let obj = [
-        {
-            src: "https://drive.google.com/uc?export=view&id=1PNIa9CnE8yaEEB50EJFQ8PDxXol4awRJ",
-            thumb: "https://drive.google.com/uc?export=view&id=1PNIa9CnE8yaEEB50EJFQ8PDxXol4awRJ"
-        },
-        {
-            src: "https://drive.google.com/uc?export=view&id=1PNIa9CnE8yaEEB50EJFQ8PDxXol4awRJ",
-            thumb: "https://drive.google.com/uc?export=view&id=1PNIa9CnE8yaEEB50EJFQ8PDxXol4awRJ"
-        }
-    ];
     console.log('test');
     console.log(obj);
     const inlineGallery = lightGallery($lgContainer, {
@@ -202,3 +202,41 @@ export function ImageItems(images){
         <img src="${GetImageURL(d)}">
         `).join('');
 }
+
+
+[
+    {
+        src:
+        "https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1400&q=80",
+        responsive:
+        "https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80 800",
+        thumb:
+        "https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80",
+        subHtml: `<div class="lightGallery-captions">
+                <h4>Photo by <a href="https://unsplash.com/@brookecagle">Brooke Cagle</a></h4>
+                <p>Description of the slide 1</p>
+            </div>`
+    },
+    {
+        video: {"source": [{"src":"https://www.lightgalleryjs.com//videos/video1.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "controls": true}},
+        thumb:
+            "https://www.lightgalleryjs.com//images/demo/html5-video-poster.jpg",
+        subHtml: `<div class="lightGallery-captions">
+                    <h4>Photo by <a href="https://unsplash.com/@brookecagle">Brooke Cagle</a></h4>
+                    <p>Description of the slide 2</p>
+                </div>`
+    },
+    {
+        src:
+            "https://images.unsplash.com/photo-1477322524744-0eece9e79640?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+        responsive:
+            "https://images.unsplash.com/photo-1477322524744-0eece9e79640?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1477322524744-0eece9e79640?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800",
+        thumb:
+            "https://images.unsplash.com/photo-1477322524744-0eece9e79640?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80"
+    },
+    {
+        src: "//www.youtube.com/watch?v=egyIeygdS_E",
+        poster: "https://img.youtube.com/vi/egyIeygdS_E/maxresdefault.jpg",
+        thumb: "https://img.youtube.com/vi/egyIeygdS_E/maxresdefault.jpg"
+    }
+]

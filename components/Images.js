@@ -71,3 +71,26 @@ export function GetEmbedVideo(video){
     }
 
 }
+
+export function GetVideoURL(video){
+    if (video===""){
+        return '';
+    }else if (video.startsWith("http") && video.includes("drive.google.com")){
+        // for Google Form auto-generated link
+        const url = new URL(video); 
+        const urlParams = new URLSearchParams(url.search);
+        if (urlParams.get("id")){
+            // return `https://drive.google.com/file/d/${urlParams.get("id")}/preview`;
+            // return `https://drive.google.com/uc?export=download&id=${urlParams.get("id")}`;
+            return `https://drive.google.com/uc?id=${urlParams.get("id")}`;
+        }else{
+            const id = video.split('/').slice(-2)[0];// second from last
+            // return `https://drive.google.com/file/d/${id}/preview`;
+            // return `https://drive.google.com/uc?export=download&id=${id}`;
+            return `https://drive.google.com/uc?id=${id}`;
+        }
+
+    }else{
+        return video;
+    }
+}

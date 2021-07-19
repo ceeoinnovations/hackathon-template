@@ -23,7 +23,8 @@ Promise.all([
         hljs.highlightAll();
         lightGallery(document.getElementById('lightgallery'), {
             plugins: [lgZoom, lgThumbnail, lgVideo],
-            speed: 500
+            speed: 500,
+            thumbnail: true
         });
     }  
 });

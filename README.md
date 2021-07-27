@@ -1,4 +1,4 @@
-**We do not use this template anymore!**
+*We do not use this template anymore!*
 
 * Are you planning to run a hackathon with a new theme under the FET Lab Hackathon 2021? -> follow these [instructions](https://github.com/ceeoinnovations/hackathon-2021/)
 * If you want to create a new product website with multiple themes, use this template: https://github.com/ceeoinnovations/product-template/ https://github.com/ceeoinnovations/hackathon-2021/
